@@ -5,9 +5,9 @@ provider "oci" {
   region = "${var.region}"
 }
 
-resource "oci_core_virtual_network" "vcn-demo" {
+resource "oci_core_virtual_network" "vcndemo" {
   cidr_block = "10.0.0.0/16"
-  dns_label = "vcn-demo"
+  dns_label = "vcndemo"
   compartment_id = "${var.compartment_ocid}"
-  display_name = "vcn-demo"
+  display_name = "vcndemo"
 }
